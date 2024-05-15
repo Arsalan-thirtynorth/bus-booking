@@ -1,0 +1,35 @@
+******* login/registerations *******
+UserName : String,
+role : String,
+Email : String,
+PhoneNumber : Number,
+Password : String,
+
+******* bus *******
+BusNumber : Number,
+destination : String,
+departureTime : Date,
+economySeatsAvailable : [],
+businessSeatsAvailable : [],
+
+******* booking *******
+userid : mongoose.ObjectId,
+busid : mongoose.ObjectId,
+ticketCategory : enum,
+seatNumber : Number,
+totalPrice : Number,
+status : enum,
+paymentMethod : enum,
+
+
+******* reviews *******
+userid : mongoose.ObjectId,
+ busid : mongoose.ObjectId,
+reviews : [{reviews : String}],
+
+******* tickets *******
+busid : mongoose.ObjectId,
+economySeats : Number,
+businessSeats : Number,
+economyPrice : Number,
+businessPrice : Number,
