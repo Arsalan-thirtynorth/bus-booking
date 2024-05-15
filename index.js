@@ -1,6 +1,7 @@
 const express = require("express");
 require("./config/config");
 
+// ALL THE ROUTES HERE
 const userRouters = require("./routes/usersRoutes");
 const busRouters = require("./routes/busRoutes");
 const adminRouters = require("./routes/adminRoutes");
